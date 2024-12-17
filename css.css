@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 4;
+    padding: 0;
+    line-height: 1.7;
+}
+dfn{
+    font-family: arial;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+}
+header {
+    background: linear-gradient(120deg, #ff00c3, #eeff00 );
+    border-radius: 5px;
+}
+h1{
+    text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 15px rgb(251, 255, 0), 0 0;
+    text-align:center;
+}
+a{
+    
+    font-family: Arial;
+    color: #000000;
+    text-align:center;
+    background: linear-gradient(120deg, #eeff00 , #ff00c3 );
+    border-radius: 7px;
+}
+footer{
+    background: linear-gradient(120deg, #ff00c3,#eeff00);
+    text-align: center;
+    position:sticky;
+    font-family: fantasy;  
+    top: 70vh;
+    margin: 5px;    
+}
+.mapa1{
+   width: 200px;
+   height: 200px; 
+   float: right;
+   position:static;
+}
+.foto1{
+    width: 500px;
+    height: 300px;
+    float: left;
+}
+.foto2{
+    width: 400px;
+    height: 200px;
+    float: left;
+
+}
+.ventana{
+    position:fixedç;
+    margin-top: 11em;
+    width: 450px;
+    height: 300px;
+}
