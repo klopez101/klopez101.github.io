@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados del Formulario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-mode">
+    <header>
+        <h1>Datos Ingresados</h1>
+        <button id="toggleMode">Modo Oscuro</button>
+    </header>
+
+    <main>
+        <div id="resultados"></div>
+    </main>
+
+    <script>
+        // Obtener los datos del localStorage
+        const data = JSON.parse(localStorage.getItem('formData'));
+
+        // Mostrar los datos en la página
+        const resultadosDiv = document.getElementById('resultados');
+        if (data) {
+            resultadosDiv.innerHTML = `
+                <p><strong>Nombre:</strong> ${data.nombre}</p>
+                <p><strong>Email:</strong> ${data.email}</p>
+                <p><strong>Edad:</strong> ${data.edad}</p>
+                <p><strong>País:</strong> ${data.pais}</p>
+            `;
+        } else {
+            resultadosDiv.innerHTML = '<p>No se encontraron datos.</p>';
+        }
+    </script>
+
+    <script src="modeToggle.js"></script>
+</body>
+</html>

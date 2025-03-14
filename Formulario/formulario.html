@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Modo Oscuro/Claro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-mode">
+    <header>
+        <h1>Formulario de Registro</h1>
+        <button id="toggleMode">Modo Oscuro</button>
+    </header>
+
+    <main>
+        <form id="registroForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" required><br><br>
+
+            <label for="pais">País:</label>
+            <select id="pais" name="pais" required>
+                <option value="España">España</option>
+                <option value="México">México</option>
+                <option value="Argentina">Argentina</option>
+            </select><br><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <script src="FormHandler.js"></script>
+    <script src="modeToggle.js"></script>
+</body>
+</html>
